@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <title>jQuery Template</title>
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    
         <script>
             $(function(){
-                
+            $('#button').click(function(){
+                alert("wowweee");
+                var name=$('#name').val();
+                var color=$('#color').val();
+                $('#banner-name').html(name);
+                $('#banner-name').css('color', color);
+            });
             });
         </script>
   </head>
   <body>
-  
+      <div id='banner'>
+          <h1 id='banner-name'></h1>
+      </div>
+      
+      Enter your name here
+    <br>
+     <input type='text' id='name'>
+     <br>
+     Enter your favorite color here
+     <br>
+     <input type='text' id='color'>
+     <br>
+     sample text
+     <br>
+     <input type='text' id='subtext'>
+     <input type='button' value='Submit' id='button'>
   </body>
 </html>
