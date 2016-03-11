@@ -11,6 +11,8 @@
                 alert("wowweee");
                 var name=$('#name').val();
                 var color=$('#color').val();
+                var backgroundColor=$('#background-color').val();
+                $('#banner').css('background-color', backgroundColor);
                 $('#banner-name').html(name);
                 $('#banner-name').css('color', color);
             });
@@ -30,9 +32,9 @@
      <br>
      <input type='text' id='color'>
      <br>
-     sample text
+     Choose your background color
      <br>
-     <input type='text' id='subtext'>
+     <input type='text' id='background-color'>
      <input type='button' value='Submit' id='button'>
   </body>
 </html>
